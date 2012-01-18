@@ -23,8 +23,8 @@ INSERT INTO `itensmenu` (`id`, `link`, `texto`, `ordem`, `dataCadastro`) VALUES
 (17, 'modifica-menu.php', 'Modifica menu', 0, '2011-12-05 17:37:51');
 
     ";
-mysql_query($sql);
-$itensMenuQuery = consultaDados("select * from itensMenu order by ordem asc");
+//mysql_query($sql);
+$itensMenuQuery = mysql_query("select * from itensMenu order by ordem asc");
 ?>
 oie
 <ul>
