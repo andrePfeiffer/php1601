@@ -24,7 +24,7 @@ INSERT INTO `itensmenu` (`id`, `link`, `texto`, `ordem`, `dataCadastro`) VALUES
 
     ";
 //mysql_query($sql);
-$itensMenuQuery = mysql_query("select * from itensMenu order by ordem asc");
+$itensMenuQuery = mysql_query("select * from itensMenu order by ordem asc") or die(mysql_error());
 ?>
 oie
 <ul>
