@@ -1,4 +1,6 @@
 <?php
+@include_once 'cronometro.php';
+
 function fizzBuzz ($numero)
 {
     if ($numero % 3 == 0) 

@@ -1,5 +1,5 @@
 <?php
-$inicio = microtime(true);
+include 'cronometro.php';
 
 function dataExtenso($quando = null){
     if(is_null($quando)){
@@ -48,6 +48,3 @@ echo 'Fim do mundo: ' . dataExtenso($prazo);
 echo '<br>';
 echo 'O mundo acaba em ' . $dias . ' dias, ' . $horas . ' horas, ' . $minutos . ' minutos e ' . $segundos . ' segundos';
 
-$final = microtime(true);
-$tempoExecucao = $final - $inicio;
-echo '<br><br>Este script demorou ' . $tempoExecucao . ' segundos para executar';
