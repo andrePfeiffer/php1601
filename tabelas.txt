@@ -1,0 +1,16 @@
+TABELA LIVROS
+
+id - mediumint unsigned - primary key
+titulo - varchar(255)
+autor_id - mediumint unsigned
+preco - float
+quantidade - smallint unsigned
+isbn - varchar(255)
+editora - varchar(255)
+edicao - varchar(255)
+dataPublicacao - date
+numeroPaginas - smallint unsigned
+tradutor - varchar(255)
+idiomaOriginal - varchar(255)
+
+
