@@ -13,7 +13,7 @@ if($_SERVER['HTTP_HOST'] == 'localhost'){
     define('DB_SENHA', 'rostie2006', true);
     define('DB_BASE', 'ctiparos_php1601', true);
     
-    define('MOSTRA_ERROS_BD', false);
+    define('MOSTRA_ERROS_BD', true);
 }
 
 @mysql_connect(DB_SERVER, DB_USER, DB_SENHA) or die(db_erro());

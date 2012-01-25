@@ -16,9 +16,18 @@ idiomaOriginal - varchar(255)
 
 
 TABELAS ITENSMENU
-
 id - smallint unsigned - primary key
 texto - varchar(255)
 url - varchar(255)
 dataCadastro - datetime
 dataAtualizacao - datetime
+
+CREATE TABLE IF NOT EXISTS `itensMenu` (
+  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+  `texto` varchar(255) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  `ordem` tinyint(4) NOT NULL DEFAULT '0',
+  `dataCadastro` datetime NOT NULL,
+  `dataAtualizacao` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
