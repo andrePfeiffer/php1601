@@ -1,3 +1,12 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <?php include 'headers.php'; ?>   
+    </head>
+    <body>
+        <?php include 'menu1.php'; ?>   
 <?php
 @include_once 'cronometro.php';
 
@@ -36,3 +45,7 @@ for ($i = 1; $i <= $limite; $i++)
 }
 
 echo $saida;
+?>
+        <?php include 'menu2.php'; ?>   
+    </body>
+</html>

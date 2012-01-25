@@ -1,0 +1,58 @@
+body{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #cccccc;
+}
+#site{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+#topo{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 150px;
+    background-color: #9999ff;
+    color: #fff;
+}
+#menu{
+    position: relative;
+    float: left;
+    width: 200px;
+    background-color: #000;
+}
+#menu ul, #menu li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#menu li a{
+    display: block;
+    border-bottom: 1px solid #fff;
+    padding: 8px 0px;
+    text-align: center;
+    width: 200px;
+    text-decoration: none;
+    color: #fff;
+}
+#menu li a:hover{
+    background-color: #9999ff;
+}
+#conteudo{
+    position: relative;
+    float: left;
+    width: 780px;
+    padding: 10px;
+    background-color: #fff;
+}
+#rodape{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: #ccffcc;
+    
+}
