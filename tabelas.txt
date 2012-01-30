@@ -31,3 +31,34 @@ CREATE TABLE IF NOT EXISTS `itensMenu` (
   `dataAtualizacao` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
+
+
+
+TABELAS USUARIOS
+id - int unsigned - not null - primary key
+nome - varchar(100) - not null
+sobrenome - varchar(150) - null
+email - varchar(100) - not null - unique
+login - varchar(100) - not null - unique
+senha - varchar(255) - not null
+nivelAcesso - tinyint - not null - default 0
+codigoConfirmacao - varchar(100) - null
+dataCadastro - datetime - null
+
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) NOT NULL,
+  `sobrenome` varchar(150) DEFAULT NULL,
+  `email` varchar(100) NOT NULL,
+  `login` varchar(100) NOT NULL,
+  `senha` varchar(255) NOT NULL,
+  `nivelAcesso` tinyint(4) NOT NULL DEFAULT '0',
+  `codigoConfirmacao` varchar(100) DEFAULT NULL,
+  `dataCadastro` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email` (`email`,`login`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+
+
+
